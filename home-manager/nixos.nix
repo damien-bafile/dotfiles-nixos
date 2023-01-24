@@ -64,14 +64,14 @@ in {
   # services
   #---------------------------------------------------------------------
 
-  # services.gpg-agent = {
-  #   enable = true;
-  #   pinentryFlavor = "tty";
+  services.gpg-agent = {
+    enable = true;
+    pinentryFlavor = "tty";
 
-  #   # cache the keys forever so we don't get asked for a password
-  #   defaultCacheTtl = 31536000;
-  #   maxCacheTtl = 31536000;
-  # };
+    # cache the keys forever so we don't get asked for a password
+    defaultCacheTtl = 31536000;
+    maxCacheTtl = 31536000;
+  };
 
   #---------------------------------------------------------------------
   # xsession

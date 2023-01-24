@@ -120,11 +120,11 @@ in {
     };
 
     
-    # openssh = {
-    #   enable = true;
-    #   passwordAuthentication = false;
-    #   permitRootLogin = "no";
-    # };
+    openssh = {
+      enable = true;
+      passwordAuthentication = false;
+      permitRootLogin = "no";
+    };
 
     xserver = {
       enable = true;
