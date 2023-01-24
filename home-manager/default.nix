@@ -19,8 +19,6 @@ in {
     LC_ALL = "en_AU.UTF-8";
     LC_CTYPE = "en_AU.UTF-8";
     PATH = "$PATH:$GOPATH/bin";
-    PULUMI_K8S_SUPPRESS_HELM_HOOK_WARNINGS = "true";
-    PULUMI_SKIP_UPDATE_CHECK = "true";
   };
 
   home.stateVersion = "22.11";
@@ -162,7 +160,7 @@ in {
 
   programs.neovim = {
     enable = true;
-    package = pkgs.neovim-nightly;
+    # package = pkgs.neovim-nightly;
 
     plugins = with pkgs; [
       # languages
