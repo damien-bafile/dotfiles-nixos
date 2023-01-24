@@ -20,7 +20,7 @@ in {
     loader = {
       efi.canTouchEfiVariables = true;
       systemd-boot.enable = true;
-      boot.loader.efi.efiSysMountPoint = "/boot/efi";
+      efi.efiSysMountPoint = "/boot/efi";
     };
   };
 
@@ -52,7 +52,7 @@ in {
       extraPackages = with pkgs; [ vaapiVdpau ];
       driSupport = true;
       driSupport32Bit = true;
-    }
+    };
   };
   
   # systemd.services.nvidia-control-devices = {
@@ -177,9 +177,8 @@ in {
   virtualisation = {
     containerd = {
       enable = true;
-      };
     };
-
-    docker.enable = true;
   };
+
+  #docker.enable = true;
 }
